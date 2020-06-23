@@ -12,29 +12,17 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using Builder.Pages;
 
-namespace Builder
+namespace Builder.Pages
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// ConfigPage.xaml 的交互逻辑
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class ConfigPage : Page
     {
-        public MainWindow()
+        public ConfigPage()
         {
             InitializeComponent();
-        }
-
-
-        private void GenClick(object sender, RoutedEventArgs e)
-        {
-            frame.Content = new GenPage();
-        }
-
-        private void ConfigClick(object sender, RoutedEventArgs e)
-        {
-            frame.Content = new ConfigPage();
         }
     }
 }

@@ -5,8 +5,27 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Builder"
         mc:Ignorable="d"
-        Title="Builder" Height="450" Width="800">
+        Title="MainWindow"
+        Height="450"
+        Width="800">
     <Grid>
-
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="49*" />
+            <ColumnDefinition Width="351*" />
+        </Grid.ColumnDefinitions>
+        <StackPanel>
+            <Button x:Name="GenBtn"
+                    Content="生成"
+                    Click="GenClick"
+                    Height="24" />
+            <Button x:Name="ConfigBtn"
+                    Content="项目配置"
+                    Click="ConfigClick"
+                    Height="24"/>
+        </StackPanel>
+        <Frame x:Name="frame"
+               Content="配置"
+               NavigationUIVisibility="Hidden"
+               Grid.Column="1" />
     </Grid>
 </Window>
